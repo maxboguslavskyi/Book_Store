@@ -23,8 +23,8 @@ public class EmployeeController {
     }
 
     @RequestMapping("editEmployee")
-    public ModelAndView editEmployee(@RequestParam long id) {
-        Employee employee = employeeService.getEmployee(id);
+    public ModelAndView editEmployee(@RequestParam long id, @ModelAttribute Employee employee) {
+        employee = employeeService.getEmployee(id);
         return new ModelAndView("employeeForm", "employeeObject", employee);
     }
 

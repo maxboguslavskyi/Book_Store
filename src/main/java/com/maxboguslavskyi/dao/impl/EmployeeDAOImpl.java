@@ -2,8 +2,6 @@ package com.maxboguslavskyi.dao.impl;
 
 import com.maxboguslavskyi.dao.EmployeeDAO;
 import com.maxboguslavskyi.entity.Employee;
-import org.hibernate.Query;
-import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
@@ -42,9 +40,6 @@ public class EmployeeDAOImpl implements EmployeeDAO {
 
     @Override
     public List<Employee> getAllEmployees() {
-        Session session = sessionFactory.getCurrentSession();
-        Query query = session.createQuery("SELECT e FROM Employee e");
-        return query.list();
-
+        return sessionFactory.getCurrentSession().createCriteria(Employee.class).list();
     }
 }

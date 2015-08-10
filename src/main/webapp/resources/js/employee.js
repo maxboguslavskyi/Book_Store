@@ -2,7 +2,6 @@ function submitEmployeeForm() {
     var name = $('#name').val().trim();
     var age = $('#age').val();
     var salary = $('#salary').val();
-
     if (name.length == 0) {
         alert('Please enter name');
         $('#name').focus();
