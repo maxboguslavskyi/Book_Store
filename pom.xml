@@ -4,10 +4,10 @@
 
     <modelVersion>4.0.0</modelVersion>
     <groupId>org.maxboguslavskyi.webapps</groupId>
-    <artifactId>SpringHibernateCRUD</artifactId>
+    <artifactId>BookStore</artifactId>
     <packaging>war</packaging>
     <version>1.0.0-BUILD-SNAPSHOT</version>
-    <name>SpringHibernateCRUD</name>
+    <name>BookStore</name>
 
     <!-- Specifying the Versions -->
     <properties>
@@ -62,6 +62,12 @@
 
         <dependency>
             <groupId>org.hibernate</groupId>
+            <artifactId>hibernate-entitymanager</artifactId>
+            <version>${hibernate.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.hibernate</groupId>
             <artifactId>hibernate-c3p0</artifactId>
             <version>${hibernate.version}</version>
         </dependency>
@@ -98,7 +104,7 @@
     </dependencies>
 
     <build>
-        <finalName>SpringHibernateCRUD</finalName>
+        <finalName>BookStore</finalName>
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>

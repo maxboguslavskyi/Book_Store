@@ -1,4 +1,4 @@
-package com.maxboguslavskyi.config;
+package com.maxboguslavskyi.bookstore.config;
 
 import org.hibernate.HibernateException;
 import org.hibernate.SessionFactory;

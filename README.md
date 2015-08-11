@@ -1,4 +1,4 @@
-# Spring & Hibernate CRUD
+# Book Store
 
 Simple Spring MVC application with CRUD operations...
 

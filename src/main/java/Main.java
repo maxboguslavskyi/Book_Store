@@ -1,4 +1,4 @@
-import com.maxboguslavskyi.config.HibernateConfig;
+import com.maxboguslavskyi.bookstore.config.HibernateConfig;
 import org.hibernate.SessionFactory;
 
 public class Main {

@@ -24,8 +24,16 @@
         <processorPath useClasspath="true" />
         <module name="Spring&amp;HibernateCRUD" />
       </profile>
+      <profile default="false" name="Annotation profile for BookStore" enabled="true">
+        <sourceOutputDir name="target\generated-sources\annotations" />
+        <sourceTestOutputDir name="target\generated-test-sources\test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+        <module name="BookStore" />
+      </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="BookStore" target="1.8" />
       <module name="Spring&amp;HibernateCRUD" target="1.8" />
     </bytecodeTargetLevel>
   </component>
