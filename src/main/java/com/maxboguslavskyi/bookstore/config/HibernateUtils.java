@@ -9,7 +9,6 @@ public class HibernateUtils {
     private static SessionFactory sessionFactory;
 
     static {
-
         Configuration configuration = new Configuration().configure();
 
         StandardServiceRegistryBuilder builder = new StandardServiceRegistryBuilder().applySettings(configuration.getProperties());
