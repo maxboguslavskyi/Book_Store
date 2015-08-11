@@ -13,13 +13,13 @@ function submitBookForm() {
         return false;
     }
 
-    if (code.length == 0 || code.length > 25) {
+    if (code.length == 0) {
         alert('Please enter proper code');
         $('#code').focus();
         return false;
     }
 
-    if (price.length == 0 || price.length > 5) {
+    if (price.length == 0) {
         alert('Please enter proper price');
         $('#price').focus();
         return false;
@@ -31,7 +31,7 @@ function submitBookForm() {
         return false;
     }
 
-    if (isbn.length == 0 || isbn.length > 25) {
+    if (isbn.length == 0) {
         alert('Please enter proper isbn');
         $('#isbn').focus();
         return false;

@@ -14,7 +14,7 @@
             base-package="com.maxboguslavskyi.bookstore.controller, com.maxboguslavskyi.bookstore.service, com.maxboguslavskyi.bookstore.dao"/>
 
     <!-- Database properties path -->
-    <context:property-placeholder location="classpath:/hibernate.properties"/>
+    <context:property-placeholder location="classpath:hibernate.properties"/>
 
     <mvc:annotation-driven/>
     <!-- Resource location to load JS, CSS, Images etc -->

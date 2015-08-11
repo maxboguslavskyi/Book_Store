@@ -49,7 +49,7 @@
                 <div class="form-group">
                     <div class="control-label col-xs-3"><form:label path="price">Price</form:label></div>
                     <div class="col-xs-6">
-                        <form:input cssClass="form-control" path="price" value="${bookObject.price}"/>
+                        <form:input cssClass="form-control" path="price" value="${bookObject.price}" placeholder="00.00$"/>
                     </div>
                 </div>
 
@@ -63,7 +63,7 @@
                 <div class="form-group">
                     <div class="control-label col-xs-3"><form:label path="isbn">ISBN</form:label></div>
                     <div class="col-xs-6">
-                        <form:input cssClass="form-control" path="isbn" value="${bookObject.isbn}"/>
+                        <form:input cssClass="form-control" path="isbn" value="${bookObject.isbn}" placeholder="XXX-X-XXXX-XXXX-X"/>
                     </div>
                 </div>
 
@@ -77,7 +77,7 @@
                 <div class="form-group">
                     <div class="control-label col-xs-3"><form:label path="publishedOn">Published Date</form:label></div>
                     <div class="col-xs-6">
-                        <form:input cssClass="form-control" path="publishedOn" value="${bookObject.publishedOn}"/>
+                        <form:input cssClass="form-control" path="publishedOn" value="${bookObject.publishedOn}" placeholder="XXXX-XX-XX"/>
                     </div>
                 </div>
 

@@ -14,7 +14,7 @@ public class Book implements Serializable {
     @Column(name = "name")
     private String name;
 
-    @Column(name = "code", length = 25)
+    @Column(name = "code", length = 20)
     private String code;
 
     @Column(name = "price", length = 5)
@@ -23,7 +23,7 @@ public class Book implements Serializable {
     @Column(name = "authors")
     private String authors;
 
-    @Column(name = "isbn", length = 25)
+    @Column(name = "isbn", length = 20)
     private String isbn;
 
     @Column(name = "publisher")
